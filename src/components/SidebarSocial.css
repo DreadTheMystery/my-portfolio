@@ -1,0 +1,28 @@
+.sidebar-social {
+    margin-top: auto;
+}
+
+.sidebar-social ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-social li {
+    flex-shrink: 0;
+}
+
+.sidebar-social a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-social a:hover {
+    color: #64ffda;
+}
