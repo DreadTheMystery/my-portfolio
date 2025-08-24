@@ -1,4 +1,6 @@
 import "./MainContent.css";
+import Skills from "./Skills";
+import Contact from "./Contact";
 
 function MainContent() {
   const experiences = [
@@ -30,12 +32,12 @@ function MainContent() {
       technologies: ["HTML", "CSS", "JavaScript"],
     },
   ];
-  
 
   const projects = [
     {
       title: "Anime Streaming Platform",
       link: "https://github.com/DreadTheMystery/manga-site",
+      demoLink: "https://anime-platform-demo.netlify.app", // Add your actual demo link
       image: "/images/anime-site.png",
       description:
         "A web app where users can browse and watch anime. Built with React for the frontend and Express + SQLite for the backend, including a video player and download feature.",
@@ -44,6 +46,7 @@ function MainContent() {
     {
       title: "E-Commerce Clothing Shop",
       link: "https://github.com/DreadTheMystery/Nafeskey-Shop",
+      demoLink: "https://nafeskey-shop-demo.netlify.app", // Add your actual demo link
       image: "/images/shop.png",
       description:
         "An online shop for clothes with product management, shopping cart, and WhatsApp checkout. Features an admin panel to add, edit, and remove products.",
@@ -51,7 +54,8 @@ function MainContent() {
     },
     {
       title: "Cardiology Website",
-      link: "#",
+      link: "https://github.com/DreadTheMystery/cardiology-site", // Update with actual repo
+      demoLink: "https://cardiology-demo.netlify.app", // Add your actual demo link
       image: "/images/cardiology-site.png",
       description:
         "Developed a professional cardiology website to showcase medical services, contact information, and patient resources, improving digital presence for the clinic.",
@@ -59,7 +63,8 @@ function MainContent() {
     },
     {
       title: "Laptop Repair Shop Website",
-      link: "#",
+      link: "https://github.com/DreadTheMystery/laptop-repair-site", // Update with actual repo
+      demoLink: "https://laptop-repair-demo.netlify.app", // Add your actual demo link
       image: "/images/laptop-repair.png",
       description:
         "A business website built for a laptop repair shop, providing service details, contact form, and improved online presence.",
@@ -67,14 +72,15 @@ function MainContent() {
     },
     {
       title: "Automatic Poultry Feeder (Hardware Project)",
-      link: "#",
+      link: "https://github.com/DreadTheMystery/poultry-feeder", // Update with actual repo
+      demoLink: null, // Hardware project - no demo link
       image: "/images/poultry-feeder.png",
       description:
         "Designed and built an automatic poultry feeder using Arduino Mega 2560, DS3231 RTC, servo motor, and LCD. Includes scheduling and control system.",
       technologies: ["Arduino", "C++", "Electronics"],
     },
   ];
-  
+
   return (
     <div className="main-content">
       <div className="content-wrapper">
@@ -110,6 +116,8 @@ function MainContent() {
             </p>
           </div>
         </section>
+
+        <Skills />
 
         <section id="experience" className="section">
           <h2 className="section-title">Experience</h2>
@@ -168,6 +176,26 @@ function MainContent() {
                     </a>
                   </h3>
                   <p className="project-description">{project.description}</p>
+                  <div className="project-links">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      GitHub
+                    </a>
+                    {project.demoLink && (
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link demo-link"
+                      >
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
                   <div className="project-tech">
                     {project.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="tech-tag">
@@ -187,68 +215,7 @@ function MainContent() {
           </div>
         </section>
 
-        <section id="contact" className="section">
-          <h2 className="section-title">Get In Touch</h2>
-          <div className="section-content">
-            <div className="contact-content">
-              <p className="contact-description">
-                I'm always interested in new opportunities and collaborations.
-                Whether you have a project in mind, want to discuss potential
-                work, or just want to say hello, I'd love to hear from you.
-              </p>
-
-              <form className="contact-form">
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="Your full name"
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="subject">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    required
-                    placeholder="What's this about?"
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    required
-                    placeholder="Tell me about your project or just say hello..."
-                  ></textarea>
-                </div>
-
-                <button type="submit" className="submit-button">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
+        <Contact />
 
         <footer className="footer">
           <p>

@@ -1,5 +1,6 @@
 .sidebar-nav {
-    margin: 3rem 0;
+    margin: 1rem 0;
+    flex: 1;
 }
 
 .sidebar-nav ul {
@@ -9,7 +10,7 @@
 }
 
 .sidebar-nav li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .sidebar-nav a {

@@ -6,7 +6,7 @@ function SidebarNavigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "experience", "projects", "contact"];
+      const sections = ["about", "skills", "experience", "projects", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -39,6 +39,7 @@ function SidebarNavigation() {
 
   const navItems = [
     { id: "about", label: "ABOUT" },
+    { id: "skills", label: "SKILLS" },
     { id: "experience", label: "EXPERIENCE" },
     { id: "projects", label: "PROJECTS" },
     { id: "contact", label: "CONTACT" },
