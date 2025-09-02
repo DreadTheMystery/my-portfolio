@@ -33,7 +33,7 @@ function Contact() {
             or just want to say hello, I'd love to hear from you.
           </p>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form action="https://formspree.io/f/xgvllldd" method="POST">
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
