@@ -38,7 +38,7 @@ function MainContent() {
       title: "Anime Streaming Platform",
       link: "https://github.com/DreadTheMystery/manga-site",
       demoLink: "https://anime-platform-demo.netlify.app", // Add your actual demo link
-      image: "/images/anime-site.png",
+      image: "/anime.png",
       description:
         "A web app where users can browse and watch anime. Built with React for the frontend and Express + SQLite for the backend, including a video player and download feature.",
       technologies: ["React", "Node.js", "Express", "SQLite", "CSS"],
@@ -47,7 +47,7 @@ function MainContent() {
       title: "E-Commerce Clothing Shop",
       link: "https://github.com/DreadTheMystery/Nafeskey-Shop",
       demoLink: "https://nafeskey-shop-demo.netlify.app", // Add your actual demo link
-      image: "/images/shop.png",
+      image: "/Ecomas.png",
       description:
         "An online shop for clothes with product management, shopping cart, and WhatsApp checkout. Features an admin panel to add, edit, and remove products.",
       technologies: ["JavaScript", "Express", "SQLite", "CSS"],
@@ -56,7 +56,7 @@ function MainContent() {
       title: "Cardiology Website",
       link: "https://github.com/DreadTheMystery/cardiology-site", // Update with actual repo
       demoLink: "https://cardiology-demo.netlify.app", // Add your actual demo link
-      image: "/images/cardiology-site.png",
+      image: "/cardio.png",
       description:
         "Developed a professional cardiology website to showcase medical services, contact information, and patient resources, improving digital presence for the clinic.",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
@@ -65,7 +65,7 @@ function MainContent() {
       title: "Laptop Repair Shop Website",
       link: "https://github.com/DreadTheMystery/laptop-repair-site", // Update with actual repo
       demoLink: "https://laptop-repair-demo.netlify.app", // Add your actual demo link
-      image: "/images/laptop-repair.png",
+      image: "", // No image yet
       description:
         "A business website built for a laptop repair shop, providing service details, contact form, and improved online presence.",
       technologies: ["HTML", "CSS", "JavaScript"],
@@ -74,7 +74,7 @@ function MainContent() {
       title: "Automatic Poultry Feeder (Hardware Project)",
       link: "https://github.com/DreadTheMystery/poultry-feeder", // Update with actual repo
       demoLink: null, // Hardware project - no demo link
-      image: "/images/poultry-feeder.png",
+      image: "", // No image yet
       description:
         "Designed and built an automatic poultry feeder using Arduino Mega 2560, DS3231 RTC, servo motor, and LCD. Includes scheduling and control system.",
       technologies: ["Arduino", "C++", "Electronics"],
